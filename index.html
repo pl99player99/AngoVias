@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngoVias - Limpeza Rodoviária Sustentável</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    .hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image/opinião-interna-da-rua-do-carro-avenida-principal-de-luanda-angola-52751435.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services-bg {
+    background-color: #f8fafc;
+}
+
+.stats-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/images.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+</style>
+</head>
+<body class="font-sans">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/3713/3713765.png" alt="AngoVias Logo" class="h-12 mr-3">
+                <span class="text-2xl font-bold text-green-600">Ango<span class="text-blue-600">Vias</span></span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-800 hover:text-green-600 font-medium">Início</a>
+                <a href="#services" class="text-gray-800 hover:text-green-600 font-medium">Serviços</a>
+                <a href="#about" class="text-gray-800 hover:text-green-600 font-medium">Sobre Nós</a>
+                <a href="#jobs" class="text-gray-800 hover:text-green-600 font-medium">Trabalhe Conosco</a>
+                <a href="#contact" class="text-gray-800 hover:text-green-600 font-medium">Contato</a>
+            </nav>
+            
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-gray-800 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-800 hover:text-green-600">Início</a>
+            <a href="#services" class="block py-2 text-gray-800 hover:text-green-600">Serviços</a>
+            <a href="#about" class="block py-2 text-gray-800 hover:text-green-600">Sobre Nós</a>
+            <a href="#jobs" class="block py-2 text-gray-800 hover:text-green-600">Trabalhe Conosco</a>
+            <a href="#contact" class="block py-2 text-gray-800 hover:text-green-600">Contato</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 flex flex-col items-center text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Estradas limpas, <span class="text-green-400">cidades mais verdes</span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl">Soluções especializadas em limpeza e manutenção rodoviária para um ambiente mais seguro e sustentável.</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#contact" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Solicitar Orçamento</a>
+                <a href="#jobs" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Trabalhe Conosco</a>
+            </div>
+            <div class="mt-12 animate-bounce-custom">
+                <a href="#services" class="text-white"><i class="fas fa-chevron-down text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-bg text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">15+</div>
+                    <div class="text-lg">Anos de Experiência</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">500+</div>
+                    <div class="text-lg">Clientes Satisfeitos</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">1200+</div>
+                    <div class="text-lg">Km Limpos/Mês</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold mb-2">250+</div>
+                    <div class="text-lg">Profissionais</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-bg py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nossos <span class="text-green-600">Serviços</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Oferecemos soluções completas para manter suas rodovias limpas e seguras.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="image/images.jpeg" alt="Limpeza Rodoviária" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-broom text-green-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Limpeza Rodoviária</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Remoção de lixo, detritos e materiais perigosos das rodovias, mantendo vias limpas e seguras para todos os usuários.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Coleta diária de resíduos</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Remoção de materiais perigosos</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Limpeza de acostamentos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="image/luanda-angola-may-17-2024-260nw-2540216859.webp" alt="Manutenção de Vias" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-road text-blue-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Manutenção de Vias</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Serviços especializados de manutenção preventiva e corretiva para garantir a segurança e durabilidade das rodovias.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Reparo de buracos</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Sinalização horizontal</li>
+                            <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2"></i> Drenagem e escoamento</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-xl">
+                    <img src="image/opinião-interna-da-rua-do-carro-avenida-principal-de-luanda-angola-52751435.webp" alt="Reciclagem de Resíduos" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-recycle text-yellow-600 text-xl"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Reciclagem de Resíduos</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Processamento e destinação ambientalmente correta de todos os resíduos coletados nas rodovias.</p>
+                        <ul class="text-gray-600 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i> Separação de materiais recicláveis</li>
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i> Destinação adequada</li>
+                            <li class="flex items-center"><i class="fas fa-check text-yellow-500 mr-2"></i> Relatórios de sustentabilidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="image/unnamed.jpg" alt="Equipe AngoVias" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Sobre a <span class="text-green-600">AngoVias</span></h2>
+                    <p class="text-gray-600 mb-6">Fundada em 2008, a AngoVias é líder no setor de limpeza e manutenção rodoviária, comprometida com a excelência no serviço e a preservação ambiental.</p>
+                    <p class="text-gray-600 mb-6">Nossa missão é proporcionar rodovias mais limpas e seguras através de soluções inovadoras e sustentáveis, contribuindo para a melhoria da qualidade de vida em Angola.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-leaf text-green-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Sustentabilidade</h4>
+                                <p class="text-gray-600">Utilizamos métodos e equipamentos eco-friendly em todas as nossas operações.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-shield-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Segurança</h4>
+                                <p class="text-gray-600">Priorizamos a segurança de nossos colaboradores e usuários das rodovias.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-medal text-yellow-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Qualidade</h4>
+                                <p class="text-gray-600">Padrões rigorosos de qualidade em todos os nossos serviços.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-users text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-2">Equipe</h4>
+                                <p class="text-gray-600">Profissionais treinados e comprometidos com a excelência.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O que dizem <span class="text-green-600">nossos clientes</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Depoimentos de quem já contratou nossos serviços.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"A AngoVias transformou completamente a limpeza das nossas rodovias. Desde que contratamos seus serviços, a redução de acidentes por detritos na pista foi significativa."</p>
+                    <div class="flex items-center">
+                        <img src="image/Imagem do WhatsApp de 2025-06-18 à(s) 10.44.48_a28a7e99.jpg" alt="Carlos Silva" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Silva</h4>
+                            <p class="text-gray-500">Prefeitura Municipal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Profissionalismo e comprometimento são as marcas da AngoVias. Nossa concessionária nunca teve problemas com limpeza desde que fechamos contrato com eles."</p>
+                    <div class="flex items-center">
+                        <img src="image/Imagem do WhatsApp de 2025-06-18 à(s) 10.44.48_a28a7e99.jpg" alt="Ana Paula" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Paula</h4>
+                            <p class="text-gray-500">Concessionária de Rodovias</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-lg shadow-md testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Como motorista de caminhão, percebi uma grande diferença na limpeza das rodovias após a AngoVias começar a atuar na região. Menos lixo, mais segurança."</p>
+                    <div class="flex items-center">
+                        <img src="image/Imagem do WhatsApp de 2025-06-18 à(s) 10.44.48_a28a7e99.jpg" alt="Roberto Almeida" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Roberto Almeida</h4>
+                            <p class="text-gray-500">Motorista Profissional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Trabalhe na <span class="text-green-600">AngoVias</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Junte-se à nossa equipe de profissionais dedicados a manter as rodovias limpas e seguras.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <!-- Job 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md job-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Coletor de Resíduos Rodoviários</h3>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Várias localidades</span>
+                            </div>
+                        </div>
+                        <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Tempo Integral</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Responsável pela coleta de resíduos nas rodovias, seguindo todos os protocolos de segurança e preservação ambiental.</p>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Ensino médio completo</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Disponibilidade para trabalhar em turnos</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> CNH B (desejável)</li>
+                        </ul>
+                    </div>
+                    <button class="apply-btn bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300" data-job="Coletor de Resíduos Rodoviários">Candidate-se</button>
+                </div>
+                
+                <!-- Job 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md job-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Operador de Máquinas</h3>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Várias localidades</span>
+                            </div>
+                        </div>
+                        <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Tempo Integral</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Operação de máquinas para limpeza e manutenção rodoviária, garantindo eficiência e segurança nas operações.</p>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Experiência comprovada</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> CNH D</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-blue-500 mr-2"></i> Curso de operador de máquinas</li>
+                        </ul>
+                    </div>
+                    <button class="apply-btn bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300" data-job="Operador de Máquinas">Candidate-se</button>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button id="show-more-jobs" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-full transition duration-300">Ver Mais Vagas</button>
+            </div>
+            
+            <!-- Hidden Jobs -->
+            <div id="more-jobs" class="hidden grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <!-- Job 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md job-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Supervisor de Limpeza</h3>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>Várias localidades</span>
+                            </div>
+                        </div>
+                        <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">Tempo Integral</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Coordenação das equipes de limpeza, garantindo a execução dos serviços conforme os padrões da empresa.</p>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-purple-500 mr-2"></i> Experiência em supervisão</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-purple-500 mr-2"></i> Conhecimento em segurança no trabalho</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-purple-500 mr-2"></i> Disponibilidade para viagens</li>
+                        </ul>
+                    </div>
+                    <button class="apply-btn bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300" data-job="Supervisor de Limpeza">Candidate-se</button>
+                </div>
+                
+                <!-- Job 4 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md job-card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Técnico em Manutenção</h3>
+                            <div class="flex items-center text-gray-600 mb-4">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                <span>São Paulo/SP</span>
+                            </div>
+                        </div>
+                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">Tempo Integral</span>
+                    </div>
+                    <p class="text-gray-600 mb-6">Manutenção preventiva e corretiva dos equipamentos e veículos utilizados nos serviços de limpeza.</p>
+                    <div class="mb-6">
+                        <h4 class="font-bold text-gray-800 mb-2">Requisitos:</h4>
+                        <ul class="text-gray-600 space-y-1">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> Formação técnica em mecânica</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> Experiência com máquinas pesadas</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-yellow-500 mr-2"></i> CNH B</li>
+                        </ul>
+                    </div>
+                    <button class="apply-btn bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300" data-job="Técnico em Manutenção">Candidate-se</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Application Modal -->
+    <div id="job-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h3 class="text-2xl font-bold text-gray-800" id="modal-job-title">Candidate-se</h3>
+                    <button id="close-modal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <form id="job-form" class="space-y-4">
+                    <input type="hidden" id="job-position" name="job-position">
+                    
+                    <div>
+                        <label for="name" class="block text-gray-700 font-medium mb-1">Nome Completo</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-700 font-medium mb-1">Telefone</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="resume" class="block text-gray-700 font-medium mb-1">Currículo (PDF)</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-1">Mensagem (Opcional)</label>
+                        <textarea id="message" name="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Candidatura</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-lg shadow-xl max-w-md w-full mx-4 p-6 text-center">
+            <div class="mb-4">
+                <i class="fas fa-check-circle text-green-500 text-5xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-2">Candidatura Enviada!</h3>
+            <p class="text-gray-600 mb-6">Sua candidatura foi recebida com sucesso. Nossa equipe de RH entrará em contato em breve.</p>
+            <button id="close-success-modal" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition duration-300">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Entre em <span class="text-green-600">Contato</span></h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Estamos prontos para atender suas necessidades de limpeza e manutenção rodoviária.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 font-medium mb-1">Nome</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="contact-subject" class="block text-gray-700 font-medium mb-1">Assunto</label>
+                            <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="contact-message" class="block text-gray-700 font-medium mb-1">Mensagem</label>
+                            <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Enviar Mensagem</button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-lg shadow-md h-full">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-green-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-green-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Endereço</h4>
+                                    <p class="text-gray-600">Av. das Rodovias, 1234<br>Jardim das Estradas<br>São Paulo/SP - CEP 01234-567</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Telefone</h4>
+                                    <p class="text-gray-600">(11) 1234-5678<br>(11) 98765-4321 (WhatsApp)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-yellow-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">E-mail</h4>
+                                    <p class="text-gray-600">contato@AngoVias.com.br<br>comercial@AngoVias.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-purple-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800 mb-1">Horário de Atendimento</h4>
+                                    <p class="text-gray-600">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-gray-800 mb-4">Siga-nos nas Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition duration-300"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition duration-300"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.075426745292!2d-46.6534265844756!3d-23.565734367638914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1623860412133!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3713/3713765.png" alt="AngoVias Logo" class="h-10 mr-3">
+                        <span class="text-xl font-bold text-green-400">Ango<span class="text-blue-400">Vias</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Soluções especializadas em limpeza e manutenção rodoviária para um ambiente mais seguro e sustentável.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Início</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Serviços</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#jobs" class="text-gray-400 hover:text-white">Trabalhe Conosco</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Serviços</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Limpeza Rodoviária</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Manutenção de Vias</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Reciclagem de Resíduos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Sinalização</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Emergências 24h</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Assine nossa newsletter para receber novidades e promoções.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Seu e-mail" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <p class="text-gray-400 text-sm mt-2">Não compartilhamos seus dados.</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 AngoVias. Todos os direitos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Termos de Serviço</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Política de Privacidade</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/244935177831" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition duration-300 z-40">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Show More Jobs
+        const showMoreJobs = document.getElementById('show-more-jobs');
+        const moreJobs = document.getElementById('more-jobs');
+        
+        showMoreJobs.addEventListener('click', () => {
+            moreJobs.classList.toggle('hidden');
+            showMoreJobs.textContent = moreJobs.classList.contains('hidden') ? 'Ver Mais Vagas' : 'Ver Menos Vagas';
+        });
+        
+        // Job Application Modal
+        const applyButtons = document.querySelectorAll('.apply-btn');
+        const jobModal = document.getElementById('job-modal');
+        const closeModal = document.getElementById('close-modal');
+        const closeSuccessModal = document.getElementById('close-success-modal');
+        const successModal = document.getElementById('success-modal');
+        const modalJobTitle = document.getElementById('modal-job-title');
+        const jobPositionField = document.getElementById('job-position');
+        const jobForm = document.getElementById('job-form');
+        
+        applyButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                const jobTitle = button.getAttribute('data-job');
+                modalJobTitle.textContent = `Candidate-se: ${jobTitle}`;
+                jobPositionField.value = jobTitle;
+                jobModal.classList.remove('hidden');
+            });
+        });
+        
+        closeModal.addEventListener('click', () => {
+            jobModal.classList.add('hidden');
+        });
+        
+        closeSuccessModal.addEventListener('click', () => {
+            successModal.classList.add('hidden');
+        });
+        
+        jobForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Here you would typically send the form data to your server
+            // For this example, we'll just show the success modal
+            jobModal.classList.add('hidden');
+            successModal.classList.remove('hidden');
+            jobForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
